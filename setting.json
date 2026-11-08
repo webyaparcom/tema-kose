@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Cephe ve kimya ürünü; görseller temsilîdir.",
+    "en": "Facade and chemical products; images are representative.",
+    "ar": "واجهة ومنتجات كيميائية؛ الصور تمثيلية."
+  },
+  "keyword": {
+    "tr": "yapı, kimya, cephe",
+    "en": "concrete, chemical, facade",
+    "ar": "خرسانة، كيماويات، واجهة"
+  },
+  "category": "Kurumsal",
+  "name": "Kore Yapı",
+  "domain": "kose.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "inter",
+    "heading": "cormorant-garamond",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#73618F",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "7px",
+    "--mx-radius-md": "12px",
+    "--mx-radius-lg": "17px",
+    "--mx-radius-xl": "23px"
+  },
+  "icon": "icon.png"
+}
