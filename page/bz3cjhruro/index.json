@@ -6,14 +6,14 @@
     "ar": "خدماتنا"
   },
   "description": {
-    "tr": "Raftan rafa; aletten alete.",
-    "en": "From shelf to shelf; from tool to tool.",
-    "ar": "من رف إلى رف؛ من أداة إلى أداة."
+    "tr": "Hazırlıktan uygulamaya; üründen sevkiyata.",
+    "en": "From preparation to application; from product to dispatch.",
+    "ar": "من التحضير إلى التنفيذ؛ ومن المنتج إلى الشحن."
   },
   "keyword": {
-    "tr": "Teknik & Depo",
-    "en": "Technical & Warehouse",
-    "ar": "تقني ومستودع"
+    "tr": "Ürün & teknik destek",
+    "en": "Products & technical support",
+    "ar": "المنتجات والدعم الفني"
   },
   "path": "hizmetler",
   "icon": "work",
@@ -36,5 +36,5 @@
     "ar": "خدماتنا"
   },
   "date": "2026-11-05T18:58:38.467Z",
-  "update": "2026-11-05T23:44:40.871Z"
+  "update": "2026-11-12T07:36:21.184Z"
 }

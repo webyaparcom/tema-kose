@@ -8,9 +8,9 @@
         "ar": "خدماتنا"
       },
       "description": {
-        "tr": "Raftan rafa; aletten alete.",
-        "en": "From shelf to shelf; from tool to tool.",
-        "ar": "من رف إلى رف؛ من أداة إلى أداة."
+        "tr": "Hazırlıktan uygulamaya; üründen sevkiyata.",
+        "en": "From preparation to application; from product to dispatch.",
+        "ar": "من التحضير إلى التنفيذ؛ ومن المنتج إلى الشحن."
       },
       "path": "hizmetler",
       "icon": "work",
@@ -49,9 +49,9 @@
       },
       "pathnext": "",
       "description": {
-        "tr": "Cephe ve kimya ürünü; görseller temsilîdir.",
-        "en": "Facade and chemical products; images are representative.",
-        "ar": "واجهة ومنتجات كيميائية؛ الصور تمثيلية."
+        "tr": "Cephe ve yapı kimyasalı; görseller temsilîdir.",
+        "en": "Facade and construction chemicals; images are representative.",
+        "ar": "واجهات ومواد بناء كيميائية؛ الصور تمثيلية."
       }
     },
     {
