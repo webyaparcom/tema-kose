@@ -30,6 +30,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "version": "1.0.0",
@@ -766,7 +772,12 @@
         "social_media": false,
         "logo_maxh": "60px",
         "logo_plate": false,
-        "contact_line": "auto"
+        "contact_line": "auto",
+        "logoDark": "",
+        "duzen": "",
+        "slogan": "",
+        "ikinciSutun": "",
+        "iletisimNot": ""
       },
       "version": "1.0.0",
       "icon": "widgets",
@@ -1478,7 +1489,7 @@
         "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "border": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
         "cta": {
-          "tr": "Teklif al",
+          "tr": "Teklif iste",
           "en": "Get a quote",
           "ar": "اطلب عرض سعر"
         },
@@ -1522,7 +1533,7 @@
         "hiza": "orta",
         "yukseklik": 82,
         "max": "1200px",
-        "img": "sanayi-kalite-lab.webp",
+        "img": "insaat-proje-2.webp",
         "video": "",
         "poster": "",
         "alt": "Kore Yapı",
@@ -1533,29 +1544,29 @@
         "bg": "var(--mx-site-bg, #ffffff)",
         "radius": "16px",
         "eyebrow": {
-          "tr": "Cephe & kimya",
-          "en": "Facade & chemical",
-          "ar": "واجهة وكيميائية"
+          "tr": "Cephe & yapı kimyası",
+          "en": "Facade & construction chemicals",
+          "ar": "واجهات ومواد بناء كيميائية"
         },
         "title": {
-          "tr": "Yüzey, kusursuz kalır",
-          "en": "The surface stays perfect",
-          "ar": "السطح يبقى مثالي"
+          "tr": "Cephede kalıcı yüzey",
+          "en": "A lasting finish for every facade",
+          "ar": "سطح متين لكل واجهة"
         },
         "metin": {
-          "tr": "Kore Yapı, cephe ve kimya ürünleri üretir. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Kore manufactures facade and chemical products. Images are representative and text is fictional.",
-          "ar": "يصنع كور واجهة ومنتجات كيميائية. الصور تمثيلية والنصوص افتراضية."
+          "tr": "Kore Yapı; mantolama, cephe boyası, sıva ve yalıtım malzemeleri sunar; teknik destek ve depodan sevkiyat sağlar. Görseller temsilîdir; metinler kurgusaldır.",
+          "en": "Kore Yapı supplies insulation systems, facade paint, plaster and waterproofing materials, with technical support and dispatch from the depot. Images are representative and text is fictional.",
+          "ar": "Kore Yapı تورّد أنظمة العزل الحراري ودهانات الواجهات واللياسة ومواد العزل المائي مع دعم فني وشحن من المستودع. الصور تمثيلية والنصوص افتراضية."
         },
         "cta1": {
-          "tr": "Ürünler",
-          "en": "Products",
-          "ar": "منتجات"
+          "tr": "Ürün grupları",
+          "en": "Product groups",
+          "ar": "مجموعات المنتجات"
         },
         "cta1_url": "hizmetler",
         "cta2": {
           "tr": "Teklif iste",
-          "en": "Request quote",
+          "en": "Request a quote",
           "ar": "اطلب عرض سعر"
         },
         "cta2_url": "teklif-al",
@@ -1601,9 +1612,9 @@
         "radius": "16px",
         "sure": 1000,
         "title": {
-          "tr": "Ne satılır, ne yapılır?",
-          "en": "What is sold, what is done?",
-          "ar": "ما الذي يُباع وما الذي يُنجز؟"
+          "tr": "Rakamlarla Kore Yapı",
+          "en": "Kore Yapı in numbers",
+          "ar": "Kore Yapı بالأرقام"
         },
         "description": {
           "tr": "Kurgusal demo verileri.",
@@ -1613,13 +1624,13 @@
       },
       "data": [
         {
-          "deger": 200,
-          "sonek": "",
-          "ikon": "build",
+          "deger": 2000,
+          "sonek": " m²",
+          "ikon": "warehouse",
           "etiket": {
-            "tr": "M2 depo",
-            "en": "M2 warehouse",
-            "ar": "مستودع م٢"
+            "tr": "Kapalı depo",
+            "en": "Covered storage",
+            "ar": "مستودع مغلق"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1630,11 +1641,11 @@
         {
           "deger": 15,
           "sonek": "",
-          "ikon": "precision_manufacturing",
+          "ikon": "category",
           "etiket": {
-            "tr": "Makine tipi",
-            "en": "Machine types",
-            "ar": "أنواع الآلات"
+            "tr": "Ürün grubu",
+            "en": "Product groups",
+            "ar": "مجموعة منتجات"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1647,9 +1658,9 @@
           "sonek": "%",
           "ikon": "verified",
           "etiket": {
-            "tr": "Denetim geçişi",
-            "en": "Inspection pass",
-            "ar": "نسبة الفحص"
+            "tr": "Partili ve etiketli sevkiyat",
+            "en": "Batch-labelled shipments",
+            "ar": "شحنات موسومة بالدفعة"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1664,7 +1675,7 @@
           "etiket": {
             "tr": "Saha ekibi",
             "en": "Field team",
-            "ar": "طاقم ميداني"
+            "ar": "فريق ميداني"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1695,98 +1706,98 @@
         "badgebg": "#2E6BFF",
         "badgecolor": "#ffffff",
         "badge": {
-          "tr": "Teknik & Depo",
-          "en": "Technical & Warehouse",
-          "ar": "تقني ومستودع"
+          "tr": "Ürün & teknik destek",
+          "en": "Products & technical support",
+          "ar": "المنتجات والدعم الفني"
         },
         "title": {
-          "tr": "Ne satılır, ne yapılır?",
-          "en": "What is sold, what is done?",
-          "ar": "ما الذي يُباع وما الذي يُنجز؟"
+          "tr": "Ne sunuyoruz?",
+          "en": "What do we supply?",
+          "ar": "ماذا نقدّم؟"
         },
         "description": {
-          "tr": "Raftan rafa; aletten alete.",
-          "en": "From shelf to shelf; from tool to tool.",
-          "ar": "من رف إلى رف؛ من أداة إلى أداة."
+          "tr": "Hazırlıktan uygulamaya; üründen sevkiyata.",
+          "en": "From preparation to application; from product to dispatch.",
+          "ar": "من التحضير إلى التنفيذ؛ ومن المنتج إلى الشحن."
         }
       },
       "data": [
         {
-          "icon": "precision_manufacturing",
+          "icon": "domain",
           "name": {
-            "tr": "Makine bakımı",
-            "en": "Machine service",
-            "ar": "صيانة الآلات"
+            "tr": "Mantolama ve cephe sistemleri",
+            "en": "Insulation and facade systems",
+            "ar": "العزل الحراري وأنظمة الواجهات"
           },
           "description": {
-            "tr": "Periyodik bakım ve yağlama.",
-            "en": "Periodic maintenance and lubrication.",
-            "ar": "صيانة دورية وتزييت."
+            "tr": "Isı yalıtım levhası, yapıştırıcı ve sıva seti.",
+            "en": "Insulation boards, adhesive and plaster sets.",
+            "ar": "ألواح عزل حراري ولاصق وأطقم لياسة."
           }
         },
         {
-          "icon": "electric_bolt",
+          "icon": "science",
           "name": {
-            "tr": "Enerji panosu",
-            "en": "Energy board",
-            "ar": "لوحة الطاقة"
+            "tr": "Yapı kimyasalları",
+            "en": "Construction chemicals",
+            "ar": "المواد الكيميائية للبناء"
           },
           "description": {
-            "tr": "Pano, kablo ve ölçüm.",
-            "en": "Panel, cable and measurement.",
-            "ar": "لوح وكابل وقياس."
+            "tr": "Derz dolgu, tamir harcı ve katkı malzemeleri.",
+            "en": "Grout, repair mortar and admixtures.",
+            "ar": "مونة فواصل وملاط ترميم ومواد مضافة."
           }
         },
         {
-          "icon": "build",
+          "icon": "warehouse",
           "name": {
-            "tr": "Yapı malzemesi",
-            "en": "Building material",
-            "ar": "مواد البناء"
+            "tr": "Depo ve sevkiyat",
+            "en": "Depot and dispatch",
+            "ar": "المستودع والشحن"
           },
           "description": {
-            "tr": "Araç ve iş makinesi malzemesi.",
-            "en": "Equipment and construction material.",
-            "ar": "معدات ومواد البناء."
+            "tr": "Palet bazlı depolama ve şantiyeye sevk planı.",
+            "en": "Pallet storage and a dispatch plan to the site.",
+            "ar": "تخزين على باليتات وخطة شحن إلى الموقع."
+          }
+        },
+        {
+          "icon": "format_paint",
+          "name": {
+            "tr": "Cephe boyası ve sıva",
+            "en": "Facade paint and plaster",
+            "ar": "دهانات الواجهات واللياسة"
+          },
+          "description": {
+            "tr": "Dış cephe boyası ve dekoratif sıva çeşitleri.",
+            "en": "Exterior paint and decorative plaster ranges.",
+            "ar": "أنواع دهانات خارجية ولياسة زخرفية."
+          }
+        },
+        {
+          "icon": "water_drop",
+          "name": {
+            "tr": "Su ve ısı yalıtımı",
+            "en": "Water and thermal insulation",
+            "ar": "العزل المائي والحراري"
+          },
+          "description": {
+            "tr": "Teras, temel ve cephe için yalıtım malzemeleri.",
+            "en": "Insulation materials for terraces, foundations and facades.",
+            "ar": "مواد عزل للأسطح والأساسات والواجهات."
           }
         },
         {
           "icon": "engineering",
           "name": {
-            "tr": "Teknik çizim",
-            "en": "Technical drawing",
-            "ar": "رسم تقني"
+            "tr": "Teknik destek ve keşif",
+            "en": "Technical support and survey",
+            "ar": "الدعم الفني والمعاينة"
           },
           "description": {
-            "tr": "Teknik çizim ve keşif.",
-            "en": "Technical drawing and survey.",
-            "ar": "رسم تقني ومسح."
-          }
-        },
-        {
-          "icon": "local_shipping",
-          "name": {
-            "tr": "Depo ve sevkiyat",
-            "en": "Warehouse and shipping",
-            "ar": "مستودع وشحن"
-          },
-          "description": {
-            "tr": "Depo düzeni ve sevk planı.",
-            "en": "Warehouse organization and dispatch plan.",
-            "ar": "تنظيم المستودع وخطة الإرسال."
-          }
-        },
-        {
-          "icon": "security",
-          "name": {
-            "tr": "İş güvenliği",
-            "en": "Work safety",
-            "ar": "سلامة العمل"
-          },
-          "description": {
-            "tr": "Koruyucu ekipman ve kontrol.",
-            "en": "Protective equipment and inspection.",
-            "ar": "معدات وقاية وتحقق."
+            "tr": "Şantiyede ölçü, malzeme listesi ve uygulama bilgisi.",
+            "en": "On-site measurements, material lists and application guidance.",
+            "ar": "قياسات في الموقع وقائمة مواد وإرشادات التنفيذ."
           }
         }
       ],
@@ -1814,19 +1825,19 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "badge": {
-          "tr": "Nasıl çalışırız?",
-          "en": "How we work",
-          "ar": "كيف نعمل؟"
+          "tr": "Süreç",
+          "en": "Process",
+          "ar": "المراحل"
         },
         "title": {
-          "tr": "Dört adımda süreç",
-          "en": "Process in four steps",
-          "ar": "العملية في أربع خطوات"
+          "tr": "Dört adımda şantiye",
+          "en": "Your site in four steps",
+          "ar": "موقعك في أربع خطوات"
         },
         "description": {
-          "tr": "İlk görüşmeden teslimata aynı akış.",
-          "en": "The same flow, from first meeting to handover.",
-          "ar": "نفس التيار من أول لقاء إلى التسليم."
+          "tr": "Keşiften uygulama desteğine.",
+          "en": "From survey to application support.",
+          "ar": "من المعاينة إلى دعم التنفيذ."
         },
         "accentText": "#ffffff",
         "cardbg": "var(--mx-site-surface, #ffffff)",
@@ -1838,12 +1849,12 @@
           "title": {
             "tr": "Keşif",
             "en": "Survey",
-            "ar": "المسح"
+            "ar": "المعاينة"
           },
           "text": {
-            "tr": "Saha ölçümü ve kayıt.",
-            "en": "Site measurement and record.",
-            "ar": "قياس الموقع والتسجيل."
+            "tr": "Şantiyede yüzey ve ölçü tespiti.",
+            "en": "Surface and measurements are checked on site.",
+            "ar": "فحص السطح والقياسات في الموقع."
           }
         },
         {
@@ -1851,38 +1862,38 @@
           "title": {
             "tr": "Teklif",
             "en": "Quote",
-            "ar": "العرض"
+            "ar": "عرض السعر"
           },
           "text": {
-            "tr": "Malzeme ve iş listesi.",
-            "en": "Material and work list.",
-            "ar": "قائمة المواد والأعمال."
+            "tr": "Malzeme listesi ve miktar hesabı.",
+            "en": "A material list and quantity calculation.",
+            "ar": "قائمة المواد وحساب الكميات."
           }
         },
         {
           "year": "03",
           "title": {
-            "tr": "Montaj",
-            "en": "Assembly",
-            "ar": "التجميع"
+            "tr": "Sevkiyat",
+            "en": "Dispatch",
+            "ar": "الشحن"
           },
           "text": {
-            "tr": "Kurulum ve ayar.",
-            "en": "Assembly and adjustment.",
-            "ar": "تركيب وضبط."
+            "tr": "Palet ve etiketli ürün, şantiyeye teslim.",
+            "en": "Palletised, labelled products delivered to the site.",
+            "ar": "منتجات على باليتات وبملصقات تُسلَّم إلى الموقع."
           }
         },
         {
           "year": "04",
           "title": {
-            "tr": "Denetim",
-            "en": "Inspection",
-            "ar": "الفحص"
+            "tr": "Uygulama desteği",
+            "en": "Application support",
+            "ar": "دعم التنفيذ"
           },
           "text": {
-            "tr": "Test ve devir.",
-            "en": "Test and handover.",
-            "ar": "اختبار وتسليم."
+            "tr": "Uygulama bilgisi ve teknik kontrol.",
+            "en": "Application guidance and technical checks.",
+            "ar": "إرشادات التنفيذ والفحص الفني."
           }
         }
       ],
@@ -1911,14 +1922,14 @@
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
         "accent": "var(--mx-site-primary, #2563eb)",
         "badge": {
-          "tr": "Ekibimiz",
-          "en": "Our team",
-          "ar": "فريقنا"
+          "tr": "Teknik ekip",
+          "en": "Technical team",
+          "ar": "الفريق الفني"
         },
         "title": {
-          "tr": "Sizi karşılayan ekip",
-          "en": "The team that welcomes you",
-          "ar": "الفريق الذي يستقبلك"
+          "tr": "Şantiyede yanınızdakiler",
+          "en": "The people beside you on site",
+          "ar": "من يرافقونك في الموقع"
         },
         "description": {
           "tr": "Kurgusal demo profiller.",
@@ -1932,42 +1943,42 @@
         {
           "name": "Kadir E.",
           "role": {
-            "tr": "Makine ustası",
-            "en": "Master fitter",
-            "ar": "فني آليات"
+            "tr": "Uygulama ustası",
+            "en": "Application foreman",
+            "ar": "مشرف التنفيذ"
           },
           "bio": {
-            "tr": "14 yıl montaj.",
-            "en": "14 years of assembly.",
-            "ar": "١٤ عامًا في التركيب."
+            "tr": "14 yıl cephe ve mantolama uygulaması.",
+            "en": "14 years of facade and insulation work.",
+            "ar": "14 عامًا في تنفيذ الواجهات والعزل الحراري."
           },
           "img": ""
         },
         {
           "name": "Selim O.",
           "role": {
-            "tr": "Elektrikçi",
-            "en": "Electrician",
-            "ar": "كهربائي"
+            "tr": "Teknik danışman",
+            "en": "Technical adviser",
+            "ar": "مستشار فني"
           },
           "bio": {
-            "tr": "10 yıl pano.",
-            "en": "10 years of panels.",
-            "ar": "١٠ سنوات في الألواح."
+            "tr": "10 yıl yapı kimyasalları.",
+            "en": "10 years in construction chemicals.",
+            "ar": "10 سنوات في المواد الكيميائية للبناء."
           },
           "img": ""
         },
         {
           "name": "Hüseyin R.",
           "role": {
-            "tr": "Depo",
+            "tr": "Depo sorumlusu",
             "en": "Warehouse lead",
-            "ar": "مستودع"
+            "ar": "مسؤول المستودع"
           },
           "bio": {
-            "tr": "6 yıl sevk.",
-            "en": "6 years of dispatch.",
-            "ar": "٦ سنوات في الإرسال."
+            "tr": "6 yıl stok ve sevkiyat.",
+            "en": "6 years of stock and dispatch.",
+            "ar": "6 سنوات في المخزون والشحن."
           },
           "img": ""
         }
@@ -1998,9 +2009,9 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "starcolor": "#f59e0b",
         "badge": {
-          "tr": "Müşteri yorumları",
-          "en": "Customer reviews",
-          "ar": "تقييمات العملاء"
+          "tr": "Yorumlar",
+          "en": "Reviews",
+          "ar": "التقييمات"
         },
         "title": {
           "tr": "Müşterilerimiz ne diyor?",
@@ -2019,46 +2030,46 @@
         {
           "name": "A. Demir.",
           "role": {
-            "tr": "Firma sahibi",
-            "en": "Business owner",
-            "ar": "صاحب شركة"
+            "tr": "Müteahhit",
+            "en": "Contractor",
+            "ar": "مقاول"
           },
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "Fatura doğru; malzeme etiketli.",
-            "en": "Invoice correct; material labeled.",
-            "ar": "الفاتورة صحيحة؛ المواد موسومة."
+            "tr": "Malzeme etiketli ve partisi kayıtlıydı; sevkiyat plana uygundu.",
+            "en": "Materials were labelled with batch records; dispatch followed the plan.",
+            "ar": "كانت المواد موسومة وسجل الدفعات متوفرًا، والشحن وفق الخطة."
           }
         },
         {
           "name": "Mustafa G.",
           "role": {
-            "tr": "İşletme",
-            "en": "Business client",
-            "ar": "إدارة"
+            "tr": "Uygulamacı",
+            "en": "Applicator",
+            "ar": "منفّذ"
           },
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "Montaj süresi plana uygun.",
-            "en": "Assembly time is as planned.",
-            "ar": "زمن التركيب يتناسب مع الخطة."
+            "tr": "Teknik destek şantiyede işimizi hızlandırdı.",
+            "en": "Technical support sped up our work on site.",
+            "ar": "سرّع الدعم الفني عملنا في الموقع."
           }
         },
         {
           "name": "T. Kılıç.",
           "role": {
-            "tr": "Alıcı",
-            "en": "Buyer",
-            "ar": "مشترى"
+            "tr": "Yapı sahibi",
+            "en": "Building owner",
+            "ar": "مالك مبنى"
           },
           "rating": 4,
           "img": "",
           "text": {
-            "tr": "Depodan teslim net.",
-            "en": "Delivery from warehouse is clear.",
-            "ar": "التسليم من المستودع واضح."
+            "tr": "Depodan teslim net ve zamanında oldu.",
+            "en": "Collection from the depot was clear and on time.",
+            "ar": "كان التسليم من المستودع واضحًا وفي موعده."
           }
         }
       ],
@@ -2103,17 +2114,17 @@
         "radius": "12px",
         "numara": true,
         "eyebrow": {
-          "tr": "Neyi iyi yaparız?",
-          "en": "What we do well",
-          "ar": "ما نتقنه؟"
+          "tr": "Ürün ve depoda neler var?",
+          "en": "What do we stock?",
+          "ar": "ماذا في المنتجات والمستودع؟"
         },
         "title": {
-          "tr": "Ne satılır, ne yapılır?",
-          "en": "What is sold, what is done?",
-          "ar": "ما الذي يُباع وما الذي يُنجز؟"
+          "tr": "Cepheden depoya",
+          "en": "From facade to depot",
+          "ar": "من الواجهة إلى المستودع"
         },
         "description": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
+          "tr": "Görseller temsilîdir; bu bir kurulum demosudur.",
           "en": "Images are representative; this is a setup demo.",
           "ar": "الصور تمثيلية وهذا عرض تجريبي."
         },
@@ -2126,16 +2137,16 @@
       "data": [
         {
           "baslik": {
-            "tr": "Makine bakımı",
-            "en": "Machine service",
-            "ar": "صيانة الآلات"
+            "tr": "Mantolama ve cephe sistemleri",
+            "en": "Insulation and facade systems",
+            "ar": "العزل الحراري وأنظمة الواجهات"
           },
           "metin": {
-            "tr": "Periyodik bakım ve yağlama.",
-            "en": "Periodic maintenance and lubrication.",
-            "ar": "صيانة دورية وتزييت."
+            "tr": "Isı yalıtım levhası, yapıştırıcı ve sıva seti.",
+            "en": "Insulation boards, adhesive and plaster sets.",
+            "ar": "ألواح عزل حراري ولاصق وأطقم لياسة."
           },
-          "img": "sanayi-makine-4.webp",
+          "img": "insaat-proje-3.webp",
           "alt": {
             "tr": "Temsilî görsel",
             "en": "Representative image",
@@ -2145,16 +2156,16 @@
         },
         {
           "baslik": {
-            "tr": "Enerji panosu",
-            "en": "Energy board",
-            "ar": "لوحة الطاقة"
+            "tr": "Yapı kimyasalları",
+            "en": "Construction chemicals",
+            "ar": "المواد الكيميائية للبناء"
           },
           "metin": {
-            "tr": "Pano, kablo ve ölçüm.",
-            "en": "Panel, cable and measurement.",
-            "ar": "لوح وكابل وقياس."
+            "tr": "Derz dolgu, tamir harcı ve katkı malzemeleri.",
+            "en": "Grout, repair mortar and admixtures.",
+            "ar": "مونة فواصل وملاط ترميم ومواد مضافة."
           },
-          "img": "sanayi-uretim-hatti.webp",
+          "img": "sanayi-kalite-lab.webp",
           "alt": {
             "tr": "Temsilî görsel",
             "en": "Representative image",
@@ -2164,14 +2175,14 @@
         },
         {
           "baslik": {
-            "tr": "Yapı malzemesi",
-            "en": "Building material",
-            "ar": "مواد البناء"
+            "tr": "Depo ve sevkiyat",
+            "en": "Depot and dispatch",
+            "ar": "المستودع والشحن"
           },
           "metin": {
-            "tr": "Araç ve iş makinesi malzemesi.",
-            "en": "Equipment and construction material.",
-            "ar": "معدات ومواد البناء."
+            "tr": "Palet bazlı depolama ve şantiyeye sevk planı.",
+            "en": "Pallet storage and a dispatch plan to the site.",
+            "ar": "تخزين على باليتات وخطة شحن إلى الموقع."
           },
           "img": "sanayi-depo.webp",
           "alt": {
@@ -2229,14 +2240,14 @@
         "radius": "12px",
         "showTitle": true,
         "title": {
-          "tr": "Birlikte çalıştığımız kuruluşlar",
-          "en": "Organisations we work with",
-          "ar": "جهات نعمل معها"
+          "tr": "Çalıştığımız firmalar",
+          "en": "Companies we work with",
+          "ar": "الشركات التي نعمل معها"
         },
         "description": {
-          "tr": "Kurgusal iş ortağı adları; gerçek bir kuruluşa ait değildir.",
-          "en": "Fictional partner names; they do not belong to a real organisation.",
-          "ar": "أسماء شركاء افتراضية لا تعود إلى جهة حقيقية."
+          "tr": "Kurgusal firma adları; gerçek bir kuruluşa ait değildir.",
+          "en": "Fictional company names; they do not belong to a real organisation.",
+          "ar": "أسماء شركات افتراضية لا تعود إلى جهة حقيقية."
         },
         "listLabel": {
           "tr": "Referans logoları",
@@ -2246,22 +2257,22 @@
       },
       "data": [
         {
-          "name": "Demo Depo"
+          "name": "Demo Müteahhit"
         },
         {
-          "name": "Demo Alet"
+          "name": "Demo Mimarlık"
         },
         {
-          "name": "Demo Atölye"
+          "name": "Demo Yapı Market"
         },
         {
-          "name": "Demo Malzeme"
+          "name": "Demo Nalbur"
         },
         {
-          "name": "Demo Forklift"
+          "name": "Demo İnşaat"
         },
         {
-          "name": "Demo İş Güvenliği"
+          "name": "Demo Uygulama"
         }
       ],
       "veri": {
@@ -2291,64 +2302,104 @@
           "ar": "الأسئلة الشائعة"
         },
         "title": {
-          "tr": "Sıkça sorulan sorular",
-          "en": "Frequently asked questions",
-          "ar": "الأسئلة الشائعة"
+          "tr": "Ürün ve sevkiyat soruları",
+          "en": "Product and dispatch questions",
+          "ar": "أسئلة المنتجات والشحن"
         },
         "description": {
-          "tr": "Merak edilenler ve kısa yanıtlar.",
-          "en": "Common questions and short answers.",
-          "ar": "أسئلة متكررة وإجابات موجزة."
+          "tr": "Teknik föy, sevkiyat ve fiyat üzerine kısa yanıtlar.",
+          "en": "Short answers on data sheets, dispatch and pricing.",
+          "ar": "إجابات موجزة عن النشرات الفنية والشحن والأسعار."
         },
         "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
       },
       "data": [
         {
+          "question": {
+            "tr": "Ürünlerin teknik föyü var mı?",
+            "en": "Do the products come with technical data sheets?",
+            "ar": "هل للمنتجات نشرات فنية؟"
+          },
+          "answer": {
+            "tr": "Evet; uygulama koşulları ve sarfiyat bilgisi ürünle birlikte verilir (demo metni).",
+            "en": "Yes; application conditions and coverage figures are supplied with the product (demo text).",
+            "ar": "نعم؛ تُسلَّم شروط التنفيذ ومعدلات الاستهلاك مع المنتج (نص تجريبي)."
+          },
           "soru": {
-            "tr": "Garanti süresi ne kadar?",
-            "en": "How long is the warranty?",
-            "ar": "ما مدة الضمان?"
+            "tr": "Ürünlerin teknik föyü var mı?",
+            "en": "Do the products come with technical data sheets?",
+            "ar": "هل للمنتجات نشرات فنية؟"
           },
           "cevap": {
-            "tr": "İş kalemine göre değişir; demo metni örnek vermez.",
-            "en": "It varies by work item; this demo text gives no example.",
-            "ar": "تتغير حسب بند العمل؛ ولا يعطي هذا النص التجريبي مثالاً."
+            "tr": "Evet; uygulama koşulları ve sarfiyat bilgisi ürünle birlikte verilir (demo metni).",
+            "en": "Yes; application conditions and coverage figures are supplied with the product (demo text).",
+            "ar": "نعم؛ تُسلَّم شروط التنفيذ ومعدلات الاستهلاك مع المنتج (نص تجريبي)."
           }
         },
         {
+          "question": {
+            "tr": "Sevkiyat hangi günler yapılır?",
+            "en": "On which days do you dispatch?",
+            "ar": "في أي أيام يتم الشحن؟"
+          },
+          "answer": {
+            "tr": "Hafta içi sabah saatlerinde, şantiye adresine palet teslimi (demo).",
+            "en": "Weekday mornings, with pallets delivered to the site address (demo).",
+            "ar": "صباح أيام العمل، مع تسليم الباليتات إلى عنوان الموقع (تجريبي)."
+          },
           "soru": {
-            "tr": "Sevkiyat hangi günler?",
-            "en": "Which days are deliveries?",
-            "ar": "أيام الشحن?"
+            "tr": "Sevkiyat hangi günler yapılır?",
+            "en": "On which days do you dispatch?",
+            "ar": "في أي أيام يتم الشحن؟"
           },
           "cevap": {
-            "tr": "Hafta içi sabah; saat 09:00 sonrası (demo).",
-            "en": "Weekday mornings; after 09:00 (demo).",
-            "ar": "أصباح أيام العمل؛ بعد ٩ ص (تجريبي)."
+            "tr": "Hafta içi sabah saatlerinde, şantiye adresine palet teslimi (demo).",
+            "en": "Weekday mornings, with pallets delivered to the site address (demo).",
+            "ar": "صباح أيام العمل، مع تسليم الباليتات إلى عنوان الموقع (تجريبي)."
           }
         },
         {
+          "question": {
+            "tr": "Sitedeki görseller ve veriler gerçek midir?",
+            "en": "Are the images and data on the site real?",
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
+          },
+          "answer": {
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
+            "en": "No; this is a setup example. Images are representative and names, figures and people are fictional.",
+            "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
+          },
           "soru": {
             "tr": "Sitedeki görseller ve veriler gerçek midir?",
             "en": "Are the images and data on the site real?",
-            "ar": "هل الصور والبيانات في الموقع حقيقية?"
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
           },
           "cevap": {
-            "tr": "Hayır; bu bir kuruluma örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
             "en": "No; this is a setup example. Images are representative and names, figures and people are fictional.",
             "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
           }
         },
         {
+          "question": {
+            "tr": "Fiyatlar nasıl belirlenir?",
+            "en": "How are prices determined?",
+            "ar": "كيف تُحدَّد الأسعار؟"
+          },
+          "answer": {
+            "tr": "Ürün grubu ve miktara göre teklifle belirlenir; bu demoda fiyat listesi yoktur.",
+            "en": "Priced by quote based on product group and quantity; there is no price list in this demo.",
+            "ar": "يُحدَّد السعر بعرض سعر حسب مجموعة المنتج والكمية؛ لا توجد قائمة أسعار في هذا العرض التجريبي."
+          },
           "soru": {
             "tr": "Fiyatlar nasıl belirlenir?",
             "en": "How are prices determined?",
-            "ar": "كيف تُحدَّد الأسعار?"
+            "ar": "كيف تُحدَّد الأسعار؟"
           },
           "cevap": {
-            "tr": "İhtiyacınıza göre teklifle belirlenir; genel bir fiyat aralığı demo metninde yer almaz.",
-            "en": "A quote based on your needs sets the price; a general range is not shown in this demo text.",
-            "ar": "يُحدَّد السعر عبر عرض سعر حسب احتياجاتك؛ ولا يُذكر نطاق عام في هذا النص التجريبي."
+            "tr": "Ürün grubu ve miktara göre teklifle belirlenir; bu demoda fiyat listesi yoktur.",
+            "en": "Priced by quote based on product group and quantity; there is no price list in this demo.",
+            "ar": "يُحدَّد السعر بعرض سعر حسب مجموعة المنتج والكمية؛ لا توجد قائمة أسعار في هذا العرض التجريبي."
           }
         }
       ],
@@ -2421,7 +2472,7 @@
           "ar": "Kore Yapı"
         },
         "panelText": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
+          "tr": "Görseller temsilîdir; bu bir kurulum demosudur.",
           "en": "Images are representative; this is a setup demo.",
           "ar": "الصور تمثيلية وهذا عرض تجريبي."
         },
@@ -2479,7 +2530,7 @@
         "formTitle": {
           "tr": "Teklif formu",
           "en": "Quote form",
-          "ar": "نموذج الطلب"
+          "ar": "نموذج طلب عرض السعر"
         },
         "nameLabel": {
           "tr": "Ad Soyad",
@@ -2510,17 +2561,17 @@
           {
             "id": "a",
             "name": {
-              "tr": "Yeni talep",
-              "en": "New request",
-              "ar": "طلب جديد"
+              "tr": "Ürün teklifi",
+              "en": "Product quote",
+              "ar": "عرض سعر منتجات"
             }
           },
           {
             "id": "b",
             "name": {
-              "tr": "Ölçü ve keşif",
-              "en": "Measure and survey",
-              "ar": "قياس واستقصاء"
+              "tr": "Keşif talebi",
+              "en": "Survey request",
+              "ar": "طلب معاينة"
             }
           },
           {
@@ -2615,7 +2666,8 @@
           "tr": "Merhaba, web sitenizden yazıyorum.",
           "en": "Hello, I am writing from your website.",
           "ar": "مرحبًا، أكتب إليكم من موقعكم الإلكتروني."
-        }
+        },
+        "formAction": ""
       },
       "data": [],
       "veri": {
@@ -2639,32 +2691,32 @@
           "ar": "Kore Yapı"
         },
         "description": {
-          "tr": "Kore Yapı, cephe ve kimya ürünleri üretir. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Kore manufactures facade and chemical products. Images are representative and text is fictional.",
-          "ar": "يصنع كور واجهة ومنتجات كيميائية. الصور تمثيلية والنصوص افتراضية."
+          "tr": "Kore Yapı; mantolama, cephe boyası, sıva ve yalıtım malzemeleri sunan bir cephe ve yapı kimyasalları firmasıdır. Görseller temsilîdir; metinler kurgusaldır.",
+          "en": "Kore Yapı is a facade and construction chemicals company offering insulation systems, facade paint, plaster and waterproofing materials. Images are representative and text is fictional.",
+          "ar": "Kore Yapı شركة واجهات ومواد كيميائية للبناء تقدّم أنظمة العزل الحراري ودهانات الواجهات واللياسة ومواد العزل. الصور تمثيلية والنصوص افتراضية."
         },
         "name2": {
           "tr": "Depo",
-          "en": "Warehouse",
+          "en": "Depot",
           "ar": "المستودع"
         },
         "spot2": {
-          "tr": "Malzeme rafa kodlu; barkodla sevk.",
-          "en": "Material coded to the shelf; shipped by barcode.",
-          "ar": "المواد موسومة على الرف؛ تُشحن بالباركود."
+          "tr": "Palet ve etiketli raf düzeni; partiye göre sevk.",
+          "en": "Pallet and labelled shelving; dispatched by batch.",
+          "ar": "ترتيب باليتات ورفوف موسومة؛ والشحن حسب الدفعة."
         },
-        "icon2": "verified",
+        "icon2": "warehouse",
         "name3": {
-          "tr": "Atölye",
-          "en": "Workshop",
-          "ar": "ورشة"
+          "tr": "Teknik föy",
+          "en": "Technical data sheet",
+          "ar": "النشرة الفنية"
         },
         "spot3": {
-          "tr": "Makine bakımında kayıt ve alet kontrolü.",
-          "en": "A record and tool inspection during machine maintenance.",
-          "ar": "تسجيل وتحقق الأدوات خلال صيانة الآلة."
+          "tr": "Her ürün için uygulama bilgisi ve kayıt.",
+          "en": "Application guidance and records for every product.",
+          "ar": "إرشادات التنفيذ وسجل لكل منتج."
         },
-        "icon3": "schedule",
+        "icon3": "description",
         "img": "sanayi-ekip-saha.webp",
         "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
@@ -2753,9 +2805,9 @@
           "ar": "اتصل بنا"
         },
         "callText": {
-          "tr": "Hafta içi 09:00 – 18:00",
-          "en": "Weekdays 09:00 – 18:00",
-          "ar": "أيام الأسبوع 09:00 – 18:00"
+          "tr": "Pzt–Cum 08:30 – 18:00",
+          "en": "Mon–Fri 08:30 – 18:00",
+          "ar": "الاثنين–الجمعة 08:30 – 18:00"
         },
         "callBtn": {
           "tr": "Ara",
@@ -2783,9 +2835,9 @@
           "ar": "البريد الإلكتروني"
         },
         "mailText": {
-          "tr": "Teklif ve detaylı sorular için",
-          "en": "For quotes and detailed questions",
-          "ar": "لعروض الأسعار والأسئلة التفصيلية"
+          "tr": "Teklif ve teknik sorular için",
+          "en": "For quotes and technical questions",
+          "ar": "لعروض الأسعار والأسئلة الفنية"
         },
         "mailBtn": {
           "tr": "E-posta gönder",
@@ -2847,25 +2899,25 @@
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
         "radius": "12px",
         "title": {
-          "tr": "Yüzeye güvenin",
-          "en": "Trust the surface",
-          "ar": "ثق بالسطح"
+          "tr": "Projenizi birlikte planlayalım",
+          "en": "Let’s plan your project together",
+          "ar": "لنخطط مشروعك معًا"
         },
         "text": {
-          "tr": "İki iş günü içinde dönüş yaparız. Bu demo sitede veri saklanmaz.",
-          "en": "We reply within two business days. No data is stored on this demo site.",
-          "ar": "نردّ خلال يومي عمل. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
+          "tr": "Formu doldurun; iki iş günü içinde dönüş yaparız. Bu demo sitede veri saklanmaz.",
+          "en": "Fill in the form; we reply within two business days. No data is stored on this demo site.",
+          "ar": "املأ النموذج وسنردّ خلال يومي عمل. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
         },
         "btn1Label": {
-          "tr": "Formu doldurun",
-          "en": "Fill the form",
-          "ar": "املأ النموذج"
+          "tr": "Teklif al",
+          "en": "Get a quote",
+          "ar": "احصل على عرض سعر"
         },
         "btn1Url": "teklif-al",
         "btn2Label": {
-          "tr": "Hizmetleri gör",
-          "en": "See services",
-          "ar": "شاهد الخدمات"
+          "tr": "Ürünleri gör",
+          "en": "See products",
+          "ar": "شاهد المنتجات"
         },
         "btn2Url": "hizmetler",
         "number": "903420260103",

@@ -1,7 +1,7 @@
 {
   "name": "Kore Yapı",
   "short_name": "Kore Yapı",
-  "description": "Cephe ve kimya ürünü; görseller temsilîdir.",
+  "description": "Cephe sistemleri ve yapı kimyasalları; görseller temsilîdir.",
   "start_url": "/tr/",
   "scope": "/",
   "display": "standalone",

@@ -2,14 +2,14 @@
   "order": false,
   "user": false,
   "description": {
-    "tr": "Cephe ve kimya ürünü; görseller temsilîdir.",
-    "en": "Facade and chemical products; images are representative.",
-    "ar": "واجهة ومنتجات كيميائية؛ الصور تمثيلية."
+    "tr": "Cephe sistemleri ve yapı kimyasalları; görseller temsilîdir.",
+    "en": "Facade systems and construction chemicals; images are representative.",
+    "ar": "أنظمة الواجهات والمواد الكيميائية للبناء؛ الصور تمثيلية."
   },
   "keyword": {
-    "tr": "yapı, kimya, cephe",
-    "en": "concrete, chemical, facade",
-    "ar": "خرسانة، كيماويات، واجهة"
+    "tr": "cephe, mantolama, yapı kimyasalı, yalıtım, sıva",
+    "en": "facade, insulation, construction chemicals, waterproofing, plaster",
+    "ar": "واجهات، عزل حراري، مواد كيميائية للبناء، عزل مائي، لياسة"
   },
   "category": "Kurumsal",
   "name": "Kore Yapı",

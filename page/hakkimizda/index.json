@@ -21,9 +21,9 @@
   },
   "pathnext": "",
   "description": {
-    "tr": "Cephe ve kimya ürünü; görseller temsilîdir.",
-    "en": "Facade and chemical products; images are representative.",
-    "ar": "واجهة ومنتجات كيميائية؛ الصور تمثيلية."
+    "tr": "Cephe ve yapı kimyasalı; görseller temsilîdir.",
+    "en": "Facade and construction chemicals; images are representative.",
+    "ar": "واجهات ومواد بناء كيميائية؛ الصور تمثيلية."
   },
   "spot": {
     "tr": "",
@@ -42,6 +42,6 @@
     "ar": "من نحن"
   },
   "text": {},
-  "update": "2026-11-05T23:44:40.874Z",
+  "update": "2026-11-12T07:36:21.187Z",
   "date": "2026-10-30"
 }
