@@ -1,149 +1,108 @@
-<section class="modulex-tline">
-  <div class="modulex-tline-container">
-    <div class="modulex-tline-header">
-      <div class="modulex-tline-badge">{{badge}}</div>
-      <h2 class="modulex-tline-title">{{title}}</h2>
-      <p class="modulex-tline-desc">{{description}}</p>
-    </div>
-    <div class="modulex-tline-list">
-      {{html}}
-    </div>
+<section class="modulex-zaman-sekme-yil{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-zaman-sekme-yil-ic">
+    {{fbbas}}
+    {{fbgovde}}
   </div>
 </section>
 
 <style>
-  .modulex-tline {
-    width: 100%;
-    padding: 80px 20px;
-    background: --bgcolor--;
-    box-sizing: border-box;
-  }
+  /* zaman-sekme-yil — Tüm tarihçe aynı anda değil, yıl yıl gezilir (sekme etkileşimi); uzun dönem metinleri ve görseller için. */
+  .modulex-zaman-sekme-yil { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-zaman-sekme-yil *, .modulex-zaman-sekme-yil *::before, .modulex-zaman-sekme-yil *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-zaman-sekme-yil :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-zaman-sekme-yil :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-zaman-sekme-yil :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-zaman-sekme-yil :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-zaman-sekme-yil img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-zaman-sekme-yil) img { height: auto; }
+  .modulex-zaman-sekme-yil [hidden] { display: none !important; }
+  .modulex-zaman-sekme-yil :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-zaman-sekme-yil :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-zaman-sekme-yil-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-zaman-sekme-yil-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-zaman-sekme-yil--bassiz .modulex-zaman-sekme-yil-bas { display: none; }
+  .modulex-zaman-sekme-yil-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-zaman-sekme-yil-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-zaman-sekme-yil-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-zaman-sekme-yil-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-zaman-sekme-yil-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-zaman-sekme-yil-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-zaman-sekme-yil-dugme:hover { transform: translateY(-2px); }
+  .modulex-zaman-sekme-yil-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-zaman-sekme-yil-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-zaman-sekme-yil-dugme .material-symbols-outlined { font-size: 20px; }
 
-  .modulex-tline-container {
-    max-width: --max--;
-    margin: 0 auto;
-  }
-
-  .modulex-tline-header {
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .modulex-tline-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit beyaz → token */
-    border-radius: 50px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-
-  .modulex-tline-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: --titlecolor--;
-    margin: 0 0 12px;
-  }
-
-  .modulex-tline-desc {
-    font-size: 16px;
-    color: --textcolor--;
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  .modulex-tline-list {
-    position: relative;
-    max-width: 760px;
-    margin: 0 auto;
-    padding-left: 34px;
-  }
-
-  .modulex-tline-list::before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 6px;
-    bottom: 6px;
-    width: 2px;
-    background: --linecolor--;
-  }
-
-  .modulex-tline-item {
-    position: relative;
-    padding: 0 0 32px 18px;
-    animation: tlineIn 0.5s ease both;
-  }
-
-  .modulex-tline-item:last-child {
-    padding-bottom: 0;
-  }
-
-  @keyframes tlineIn {
-    from { opacity: 0; transform: translateX(-14px); }
-    to { opacity: 1; transform: translateX(0); }
-  }
-
-  .modulex-tline-dot {
-    position: absolute;
-    left: -32px;
-    top: 4px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: --accent--;
-    border: 3px solid --bgcolor--;
-    box-shadow: 0 0 0 2px --accent--;
-  }
-
-  .modulex-tline-year {
-    display: inline-block;
-    padding: 3px 12px;
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit beyaz → token */
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
-
-  .modulex-tline-item-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: --titlecolor--;
-    margin: 0 0 6px;
-  }
-
-  .modulex-tline-item-text {
-    font-size: 14px;
-    line-height: 1.7;
-    color: --textcolor--;
-    margin: 0;
-  }
-
+  .modulex-zaman-sekme-yil-yillar { position: relative; display: flex; justify-content: space-between; gap: 8px; margin-block-end: 28px; overflow-x: auto; scrollbar-width: none; }
+  .modulex-zaman-sekme-yil-yillar::before { content: ""; position: absolute; inset-inline: 0; inset-block-start: 9px; height: 2px; background: --cizgi--; }
+  .modulex-zaman-sekme-yil:not(.modulex-zaman-sekme-yil--js) .modulex-zaman-sekme-yil-yillar { display: none; }
+  .modulex-zaman-sekme-yil-sekme { position: relative; display: grid; justify-items: center; gap: 10px; flex: 1 0 auto; min-width: 72px; padding: 0 6px 6px; border: 0; background: transparent; color: --muted--; font: inherit; font-weight: 700; font-variant-numeric: tabular-nums; transition: color 0.25s ease; }
+  .modulex-zaman-sekme-yil-nokta { width: 20px; height: 20px; border: 3px solid --cizgi--; border-radius: 50%; background: --bg--; transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease; }
+  .modulex-zaman-sekme-yil-sekme:hover { color: --text--; }
+  .modulex-zaman-sekme-yil-sekme[aria-selected="true"] { color: --text--; }
+  .modulex-zaman-sekme-yil-sekme[aria-selected="true"] .modulex-zaman-sekme-yil-nokta { border-color: --accent--; background: --accent--; transform: scale(1.25); }
+  .modulex-zaman-sekme-yil-paneller { display: grid; gap: 16px; }
+  .modulex-zaman-sekme-yil-panel { position: relative; display: grid; gap: 28px; align-items: center; padding: clamp(24px, 4vw, 48px); border-radius: --yuvarlak--; background: --bg--; animation: modulex-zaman-sekme-yil-gel 0.4s ease both; }
+  .modulex-zaman-sekme-yil-panel--gorsel { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .modulex-zaman-sekme-yil-yazi { display: grid; gap: 10px; }
+  .modulex-zaman-sekme-yil-yil { color: --accentInk--; font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+  .modulex-zaman-sekme-yil-kbaslik { font-size: 1.5rem; font-weight: 750; }
+  .modulex-zaman-sekme-yil-kmetin { color: --muted--; font-size: 1.05rem; line-height: 1.75; }
+  .modulex-zaman-sekme-yil-gorsel { width: 100%; height: 100%; max-height: 340px; object-fit: cover; border-radius: calc(--yuvarlak-- * 0.7); }
+  @keyframes modulex-zaman-sekme-yil-gel { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
   @media (max-width: 768px) {
-    .modulex-tline {
-      padding: 48px 14px;
-    }
-
-    .modulex-tline-title {
-      font-size: 26px;
-    }
-
-    [class*="modulex"] {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
+    .modulex-zaman-sekme-yil-yillar { justify-content: flex-start; }
+    .modulex-zaman-sekme-yil-panel--gorsel { grid-template-columns: minmax(0, 1fr); }
   }
+  .modulex-zaman-sekme-yil-bag { color: inherit; text-decoration: none; }
+  .modulex-zaman-sekme-yil-bag::after { content: ""; position: absolute; inset: 0; z-index: 3; }
+  .modulex-zaman-sekme-yil-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
 
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-zaman-sekme-yil :is(.modulex-zaman-sekme-yil-baslik, .modulex-zaman-sekme-yil-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-zaman-sekme-yil-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-zaman-sekme-yil { padding-inline: 16px; }
+  }
   @media (prefers-reduced-motion: reduce) {
-    [class*="modulex"],
-    [class*="modulex"] * {
-      animation: none !important;
-      transition: none !important;
-    }
+    .modulex-zaman-sekme-yil *, .modulex-zaman-sekme-yil *::before, .modulex-zaman-sekme-yil *::after { animation: none !important; transition: none !important; }
   }
 </style>
+<script>
+  (() => {
+    const P = "modulex-zaman-sekme-yil";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const sekme = (s, P) => {
+        const t = [...s.querySelectorAll("[role=tab]")];
+        const p = [...s.querySelectorAll("[role=tabpanel]")];
+        if (!t.length) return;
+        s.classList.add(P + "--js");
+        const sec = (i, odak) => {
+          t.forEach((x, j) => { x.setAttribute("aria-selected", String(i === j)); x.tabIndex = i === j ? 0 : -1; });
+          p.forEach((x, j) => { x.hidden = i !== j; });
+          if (odak) t[i].focus();
+        };
+        sec(0);
+        t.forEach((x, i) => {
+          x.addEventListener("click", () => sec(i));
+          x.addEventListener("keydown", (e) => {
+            const rtl = getComputedStyle(s).direction === "rtl";
+            const ileri = rtl ? "ArrowLeft" : "ArrowRight";
+            const geri = rtl ? "ArrowRight" : "ArrowLeft";
+            let n = -1;
+            if (e.key === ileri || e.key === "ArrowDown") n = (i + 1) % t.length;
+            else if (e.key === geri || e.key === "ArrowUp") n = (i - 1 + t.length) % t.length;
+            else if (e.key === "Home") n = 0;
+            else if (e.key === "End") n = t.length - 1;
+            if (n > -1) { e.preventDefault(); sec(n, true); }
+          });
+        });
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      sekme(s, P, az);
+    });
+  })();
+</script>
